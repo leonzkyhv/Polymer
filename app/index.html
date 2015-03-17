@@ -27,27 +27,86 @@
   <web-presentation>
     <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
     <web-slide-title>
-      <h1>Pure Webcomponents Presentation Framework</h1>
-      <h2>web-presentations</h2>
-      <test-el class="kl"> 
-      </test-el>
-       
+        <h1>Días del futuro pasado: Polymer</h1>
+        <h2>Leonardo Hernandez</h2>
 
-<div class="codeText">
-  <prism-js language="markup" escape="true"
-  theme="okaidia">
-    <p>Some paragraph text</p>
-    <p data-foo="bar"></p>
-    <style>  p { color: red; } </style>
-
-    <div>SE</div>
-  </prism-js>
-      </div>
+        <div class="codeText">
+          <prism-js language="markup" escape="true"
+          theme="okaidia">
+            <my-element>
+                Polymer is awesome!!!
+            </my-element>
+          </prism-js>
+        </div>
     </web-slide-title>
     <web-slide>
-      <h1>Native, fast, extendable</h1>
-      <h2>..and only one file to import</h2>
+      <h1>Primero lo primero...</h1>
+      <h2>Conseguir Polymer</h2>
+      <prism-js language="markup" escape="true"
+          theme="coy">
+            bower init
+            bower install --save Polymer/polymer
+            bower update
+       </prism-js>
     </web-slide>
+    <web-slide>
+      <h1>Nuestro Elemento</h1>
+      <h2>proto-element.html</h2>
+      <prism-js language="markup" escape="true"
+          theme="okaidia">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="my-element" noscript>
+   <template>
+       <span>I'm <b>my-element</b>. This is my Shadow DOM.</span>
+   </template>
+</polymer-element>
+       </prism-js>
+    </web-slide>
+    
+    
+    <web-slide>
+      <h1>Primero lo primero...3</h1>
+      <h2>Head </h2>
+      <prism-js language="markup" escape="true" theme="okaidia">
+
+<title>Polymer Demo</title>
+<script src="bower_components/webcomponentsjs/webcomponents.js">
+</script>
+
+
+       </prism-js>
+    </web-slide>
+    
+    
+        <web-slide>
+      <h1>Primero lo primero...4</h1>
+      <h2>Conseguir Polymer</h2>
+      <prism-js language="markup" escape="true"
+          theme="coy">
+bower install Polymer/core-header-panel
+bower install Polymer/core-toolbar
+bower install google-map
+       </prism-js>
+    </web-slide>
+    
+    
+   <web-slide>
+      <h1>Simple Map</h1>
+      <h2>Importando Componentes</h2>
+      <prism-js language="markup" escape="true"
+          theme="okaidia">
+<link rel="import" href="bower_components/google-map/google-map.html">
+ <style>
+  google-map {
+    height: 400px;
+  }
+</style>
+      ....  
+<google-map latitude="32.525" longitude="-117.033"></google-map>
+      
+       </prism-js>
+    </web-slide>
+    
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->

@@ -28,6 +28,16 @@ web-slide-title +.forward-in {
   -webkit-animation: moveFromRight .7s ease both;
   animation: moveFromRight .7s ease both;
 }
+
+web-slide.forward-out {
+  -webkit-animation: moveToLeft .7s ease-in-out both;
+  animation: moveToLeft .7s ease-in-out both;
+}
+web-slide +.forward-in {
+  -webkit-animation: moveFromRight .7s ease both;
+  animation: moveFromRight .7s ease both;
+}
+
 @-webkit-keyframes moveToLeft {
   from { }
   to { -webkit-transform: translateX(-100%); }
